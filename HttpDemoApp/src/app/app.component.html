@@ -1,0 +1,27 @@
+<h3>Users Data</h3>
+<ul>
+   <li *ngFor="let item of persondata; let i = index">
+      {{item.address.suite}}
+   </li>
+</ul>
+<form [formGroup]="formdata" (ngSubmit)="onFormSubmit(formdata.value)">
+  <table>
+      <tr>
+          <td>Name</td>
+          <td><input type="text" name="emailid" formControlName="name"></td>
+      </tr>
+      <tr>
+          <td>Salary</td>
+          <td><input type="text" name="Salary" formControlName="salary"></td>
+      </tr>
+      <tr>
+        <td>Age</td>
+        <td><input type="number" name="age" formControlName="age"></td>
+    </tr>
+      <tr>
+          <td> <input type="submit" value="login">
+          </td>
+      </tr>
+   {{msg}}
+  </table>
+  </form>

@@ -1,0 +1,17 @@
+<form [formGroup]="formdata" (ngSubmit)="onFormSubmit(formdata.value)">
+    <table>
+        <tr>
+            <td>Email ID</td>
+            <td><input type="text" name="emailid" formControlName="emailid"></td>
+        </tr>
+        <tr>
+            <td>Password</td>
+            <td><input type="password" name="password" formControlName="password"></td>
+        </tr>
+        <tr>
+            <td> <input type="submit" value="login">
+            </td>
+        </tr>
+     
+    </table>
+    </form>
